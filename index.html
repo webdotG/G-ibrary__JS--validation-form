@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validation-form__input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="form__wrapper">
+    <form id="form-search" class="form-search">
+        <div class="form-search__input-wrapper">
+            <input id="form-search__input" class="form-search__input" type="search"
+                   placeholder="Search" autocomplete="off">
+            <button class="form-search__submit-btn" type="submit"><img src="img/icon__search.png"></button>
+        </div>
+        <div id="form-search__error-tooltip" class="form-search__error-tooltip display-none">запрещается вводить :
+            меньше 4х и больше 12 символов а также " ! @ # $ % ^ & * () "
+        </div>
+    </form>
+</div>
+<script src="form-search__validation--input.js"></script>
+</body>
+</html>
