@@ -191,6 +191,10 @@ a {
     display: block;
 }
 
+.mobile-btn__wrapper{
+    display: none;
+}
+
 /*----------------------------------------------max-width 830px------------------------------------------------------*/
 
 @media (max-width: 830px) {
@@ -207,6 +211,7 @@ a {
     .navigation {
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
 
 
@@ -214,6 +219,21 @@ a {
         margin-bottom: 25px;
         /*margin-right: auto;
         margin-left: 16px;*/
+    }
+
+    .mobile-btn__wrapper{
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 25px;
+    }
+
+    .mobile__btn{
+        width: 25px;
+        height: 25px;
+        display: block;
+        border: 1px solid black;
+        background-color: coral;
     }
 
     .navigation__list {
