@@ -167,19 +167,26 @@ a {
 .navigation__user-link:hover {
     background-color: black;
 }
+
 .navigation__item,
-.navigation__user-item{
+.navigation__user-item {
     position: relative;
 }
+
 .navigation__item::after,
 .navigation__user-item::after {
     content: "";
     width: 50px;
     height: 2px;
-    display: block;
+    display: none;
     background-color: lightblue;
     border: 2px solid black;
     position: absolute;
     bottom: -10px;
     left: 0;
+}
+
+ .navigation__item:hover.navigation__item::after,
+ .navigation__user-item:hover.navigation__user-item::after{
+    display: block;
 }
