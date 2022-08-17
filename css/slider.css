@@ -1,0 +1,113 @@
+
+.slider__wrapper{
+    width: auto;
+    position: relative;
+    background-color: #e0afd7;
+    border: 1px dotted black;
+}
+
+.slider {
+    width: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid black;
+    background-color: #12d9df;
+}
+
+.slider__slide {
+    display: none;
+}
+
+.slider__slide--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #76eec6;
+    border: 1px solid black;
+}
+
+.slider__img {
+    width: 125px;
+    height: 125px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 125px;
+    background-color: #fff68f;
+    border: 1px solid black;
+}
+
+.slide__paragraph {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #caff70;
+    border: 1px solid black;
+}
+
+
+#slider__btn--prev {
+    display: block;
+    width: 76px;
+    height: 67px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    border: 2px solid black;
+    background-color: #c818f8;
+}
+
+#slider__btn--next {
+    display: block;
+    width: 76px;
+    height: 67px;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background-position: center;
+    border: 2px solid black;
+    background-color: #c818f8;
+}
+
+#slider__btn--prev:focus,
+#slider__btn--prev:hover{
+    background-color: #bfefff;
+}
+
+
+#slider__btn--next:focus,
+#slider__btn--next:hover{
+    background-color: #bfefff;
+}
+#slider__btn--next img {
+    width: 45px;
+}
+
+#slider__btn--prev img {
+    transform: scale(-1, 1);
+    width: 45px;
+}
+
+/*--------------------------------------------max-width 674p--------------------------------------------------------x*/
+
+@media (max-width: 674px) {
+
+    .slider__wrapper{
+        padding-bottom: 67px;
+    }
+
+    #slider__btn--prev{
+        left: 50px;
+        top: 169px;
+    }
+
+    #slider__btn--next{
+        right: 50px;
+        top: 169px;
+    }
+}

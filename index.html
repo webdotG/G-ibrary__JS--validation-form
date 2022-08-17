@@ -2,23 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Validation-form__input</title>
+    <title>test transform all in </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- последующая простота добавления стилей -->
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/slider.css">
 </head>
 <body>
-<div class="form__wrapper">
-    <form id="form-search" class="form-search">
-        <div class="form-search__input-wrapper">
-            <input id="form-search__input" class="form-search__input" type="search"
-                   placeholder="Search" autocomplete="off">
-            <button class="form-search__submit-btn" type="submit"><img src="img/icon__search.png"></button>
-        </div>
-        <div id="form-search__error-tooltip" class="form-search__error-tooltip display-none">запрещается вводить :
-            меньше 4х и больше 12 символов а также " ! @ # $ % ^ & * () "
-        </div>
-    </form>
-</div>
-<script src="js/form-search__validation--input.js"></script>
+<header>
+    <div class="navigation__wrapper">
+        <nav class="navigation">
+            <div class="navigation__logo"><img class="navigation__logo-img" src="#" alt="logo" width="80px"
+                                               height="60px">
+            </div>
+            <div class="navigation__btn">burger btn</div>
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--first"><a class="navigation__link navigation__link--first"
+                                                                        href="#">first</a></li>
+                <li class="navigation__item navigation__item--second"><a
+                        class="navigation__link navigation__link--second"
+                        href="#">second</a></li>
+                <li class="navigation__item navigation__item--third"><a class="navigation__link navigation__link--third"
+                                                                        href="#">third</a></li>
+                <li class="navigation__item navigation__item--fourth"><a
+                        class="navigation__link navigation__link--fourth"
+                        href="#">fourth</a></li>
+            </ul>
+            <ul class="navigation__user-menu">
+                <li class="navigation__user-item navigation__user-item--login"><a href="#"
+                                                                                  class="navigation__user-link navigation__user-link--login">log
+                    in</a></li>
+                <li class="navigation__user-item navigation__user-item--cart"><a href="#"
+                                                                                 class="navigation__user-link navigation__user-link--cart">cart</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="slider__wrapper">
+        <ul class="slider">
+            <li class="slider__slide slider__slide--active">
+                <div class="slide__paragraph">text 1</div>
+                <div class="slider__img">
+                    <img src="img/icon__user1.png" alt="slide 1">
+                </div>
+            </li>
+            <li class="slider__slide">
+                <div class="slide__paragraph">text 2</div>
+                <div class="slider__img">
+                    <img src="img/#" alt="slide 2">
+                </div>
+            </li>
+            <li class="slider__slide">
+                <div class="slide__paragraph">text 3</div>
+                <div class="slider__img">
+                    <img src="img/icon__user1.png" alt="slide 3">
+                </div>
+            </li>
+        </ul>
+        <button id="slider__btn--prev"><img src="img/icon__right.png" alt="prev btn"></button>
+        <button id="slider__btn--next"><img src="img/icon__right.png" alt="prev btn"></button>
+    </div>
+</header>
+<script src="js/slider.js"></script>
 </body>
 </html>
